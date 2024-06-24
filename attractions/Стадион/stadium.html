@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Белебей Guide</title>
+    <link rel="shortcut icon" href="../../photo/logo.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../style.css">
+    <script src="../../script.js" defer></script>
+</head>
+<body class="phone1">
+    <nav>
+        <div class="nav-container">
+            <div class="nav-header">
+                <img src="../../photo/logo.png" alt="Логотип" class="logo">
+                <h2 class="Belebey">Белебей Guide</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../../index.html" class="active">Главное</a></li>
+                <li><a href="../../about_project/about_project.html">О проекте</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="attraction-header">
+        <h1>Стадион</h1>
+        <div class="photo-gallery" id="photo-gallery">
+            <!-- Add photos here -->
+            <img src="../../attractions/Стадион/1.jpg" alt="Фото 1" class="gallery-photo">
+            <img src="../../attractions/Стадион/2.jpg" alt="Фото 2" class="gallery-photo">
+            <img src="../../attractions/Стадион/3.jpg" alt="Фото 3" class="gallery-photo">
+            <img src="../../attractions/Стадион/4.jpg" alt="Фото 4" class="gallery-photo">
+            <img src="../../attractions/Стадион/5.jpg" alt="Фото 5" class="gallery-photo">
+        </div>
+    </div>
+    <main>
+        <div class="content-block">
+            <div class="content-header" onclick="toggleContent()">
+                <h2>Содержание</h2>
+                <span class="arrow">&#9660;</span>
+            </div>
+            <div class="content-buttons-container">
+                <div class="content-buttons">
+                    <div class="content-button" onclick="scrollToSection('section1')">Описание</div>
+                    <div class="content-button" onclick="scrollToSection('section2')">Адрес</div>
+                    <div class="content-button" onclick="scrollToSection('section3')">Рядом находится</div>
+                </div>
+            </div>
+        </div>
+        <section id="section1">
+            <h2>Описание</h2>
+            <p>Белебеевский Стадион - это великолепное место для проведения разнообразных мероприятий и активного отдыха. Здесь можно сыграть в футбол, поболеть за любимую команду, насладиться атмосферой напряженных спортивных сражений. Уютные трибуны предоставляют возможность зрителям насладиться игрой и поддержать своих любимцев.
+ Зимой стадион превращается в удивительное место для активного досуга - здесь можно весело провести время, катаясь на катке и наслаждаясь зимними забавами. Великолепные виды и возможность заняться спортом всегда доступны на Белебеевском Стадионе - идеальном месте для веселого проведения времени!</p>
+        </section>
+        <section id="section2">
+            <h2>Адрес:</h2>
+            <p>г. Белебей, ул. Уфимская 5 А</p>
+        </section>
+        <section id="section3">
+            <h2>Рядом находится:</h2>
+            <p> Школа №2, Парк Чапаева.</p>
+        </section>
+    </main>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+        <a class="next" onclick="changeImage(1)">&#10095;</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Белебей Guide</title>
+    <link rel="shortcut icon" href="../../photo/logo.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../style.css">
+    <script src="../../script.js" defer></script>
+</head>
+<body class="phone1">
+    <nav>
+        <div class="nav-container">
+            <div class="nav-header">
+                <img src="../../photo/logo.png" alt="Логотип" class="logo">
+                <h2 class="Belebey">Белебей Guide</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../../index.html" class="active">Главное</a></li>
+                <li><a href="../../about_project/about_project.html">О проекте</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="attraction-header">
+        <h1>Парк Чапаева</h1>
+        <div class="photo-gallery" id="photo-gallery">
+            <!-- Add photos here -->
+            <img src="../../attractions/Парк Чапаева/1.jpg" alt="Фото 1" class="gallery-photo">
+            <img src="../../attractions/Парк Чапаева/2.jpg" alt="Фото 2" class="gallery-photo">
+            <img src="../../attractions/Парк Чапаева/3.jpg" alt="Фото 3" class="gallery-photo">
+            <img src="../../attractions/Парк Чапаева/4.jpg" alt="Фото 4" class="gallery-photo">
+            <img src="../../attractions/Парк Чапаева/5.jpg" alt="Фото 5" class="gallery-photo">
+            <img src="../../attractions/Парк Чапаева/6.jpg" alt="Фото 6" class="gallery-photo">
+        </div>
+    </div>
+    <main>
+        <div class="content-block">
+            <div class="content-header" onclick="toggleContent()">
+                <h2>Содержание</h2>
+                <span class="arrow">&#9660;</span>
+            </div>
+            <div class="content-buttons-container">
+                <div class="content-buttons">
+                    <div class="content-button" onclick="scrollToSection('section1')">Описание</div>
+                    <div class="content-button" onclick="scrollToSection('section2')">Адрес</div>
+                    <div class="content-button" onclick="scrollToSection('section3')">Рядом находится</div>
+                </div>
+            </div>
+        </div>
+        <section id="section1">
+            <h2>Описание</h2>
+            <p>Парк был учрежден в 1972 году. Его территория составляет 2,5 гектара.
+В парке имеются механические развлечения, такие как "Солнышко", "Юнга" и "Детская железная дорога"; аттракционы небольших размеров, включая "Конь", "Самолет" и "Лодочка"; надувные батуты, такие как "Горка-скала" и "Теремок с шариками"; детские электромобили и спортивный батут. В летний период также работают аттракционы от частных предпринимателей и торговые точки. С 1 октября парк переходит на зимний режим работы.
+В центре парка установлен памятник Герою гражданской войны В.И. Чапаеву. Парк оборудован радиосистемой. На его территории установлены световые информационные столбы с фотографиями и описанием боевого пути учителей-фронтовиков из города Белебей. В будущем планируется размещение информации о культурном наследии города и округа.</p>
+        </section>
+        <section id="section2">
+            <h2>Адрес:</h2>
+            <p>г. Белебей, ул. Ленина 1 E</p>
+        </section>
+        <section id="section3">
+            <h2>Рядом находится:</h2>
+            <p>Школа №2, Стадион.</p>
+        </section>
+    </main>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+        <a class="next" onclick="changeImage(1)">&#10095;</a>
+    </div>
+</body>
+</html>

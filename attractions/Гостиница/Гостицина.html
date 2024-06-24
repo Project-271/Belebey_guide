@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Белебей Guide</title>
+    <link rel="shortcut icon" href="../../photo/logo.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../style.css">
+    <script src="../../script.js" defer></script>
+</head>
+<body class="phone1">
+    <nav>
+        <div class="nav-container">
+            <div class="nav-header">
+                <img src="../../photo/logo.png" alt="Логотип" class="logo">
+                <h2 class="Belebey">Белебей Guide</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../../index.html" class="active">Главное</a></li>
+                <li><a href="../../about_project/about_project.html">О проекте</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="attraction-header">
+        <h1>Гостиница "Белебей"</h1>
+        <div class="photo-gallery" id="photo-gallery">
+            <!-- Add photos here -->
+            <img src="../../attractions/Гостиница/1.jpg" alt="Фото 1" class="gallery-photo">
+            <img src="../../attractions/Гостиница/2.jpg" alt="Фото 2" class="gallery-photo">
+            <img src="../../attractions/Гостиница/3.jpg" alt="Фото 3" class="gallery-photo">
+            <img src="../../attractions/Гостиница/4.jpg" alt="Фото 4" class="gallery-photo">
+        </div>
+    </div>
+    <main>
+        <div class="content-block">
+            <div class="content-header" onclick="toggleContent()">
+                <h2>Содержание</h2>
+                <span class="arrow">&#9660;</span>
+            </div>
+            <div class="content-buttons-container">
+                <div class="content-buttons">
+                    <div class="content-button" onclick="scrollToSection('section1')">Описание</div>
+                    <div class="content-button" onclick="scrollToSection('section2')">Адрес</div>
+                    <div class="content-button" onclick="scrollToSection('section3')">Рядом находится</div>
+                </div>
+            </div>
+        </div>
+        <section id="section1">
+            <h2>Описание</h2>
+            <p>Отельский комплекс «Белебей» удобно расположен в центре города Белебей, рядом с удобными транспортными узлами, где сосредоточена деловая и культурная жизнь города. До отеля можно доехать всего за 15 минут от железнодорожного вокзала на станции Аксаково и за 5 минут от автовокзала г. Белебея.
+Наш отель полностью соответствует запросам требовательных постояльцев. В наличии имеется 35 уютных номеров различных категорий - люкс, двухместные, одноместные, также доступна услуга прачечной и бесплатный Wi-Fi.
+У здания отеля есть охраняемая парковка.
+Атмосфера комфорта с современным дизайном, высокий уровень обслуживания и индивидуальный подход к каждому гостю - основные черты отельного комплекса «Белебей».
+Отель предлагает апартаменты для долгосрочного проживания и рекламные площади как на самом здании отеля, так и в городе.
+Превосходное расположение сделает ваше пребывание и отдых в Белебее незабываемыми.
+Принимаются к оплате кредитные карты. Регистрация иностранных граждан осуществляется бесплатно.
+Отель предоставляет гостям бесплатный доступ к Wi-Fi.
+Отель обладает сертификатом о присвоении категории "Три звезды".</p>
+        </section>
+        <section id="section2">
+            <h2>Адрес:</h2>
+            <p>г. Белебей, ул. Красная 112</p>
+        </section>
+        <section id="section3">
+            <h2>Рядом находится:</h2>
+            <p>Кинотеатр Мир Кино, Магазин Магнит, Детская поликлиника.</p>
+        </section>
+    </main>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+        <a class="next" onclick="changeImage(1)">&#10095;</a>
+    </div>
+</body>
+</html>

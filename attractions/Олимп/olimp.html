@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Белебей Guide</title>
+    <link rel="shortcut icon" href="../../photo/logo.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../style.css">
+    <script src="../../script.js" defer></script>
+</head>
+<body class="phone1">
+    <nav>
+        <div class="nav-container">
+            <div class="nav-header">
+                <img src="../../photo/logo.png" alt="Логотип" class="logo">
+                <h2 class="Belebey">Белебей Guide</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../../index.html" class="active">Главное</a></li>
+                <li><a href="../../about_project/about_project.html">О проекте</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="attraction-header">
+        <h1>Олимп</h1>
+        <div class="photo-gallery" id="photo-gallery">
+            <!-- Add photos here -->
+            <img src="../../attractions/Олимп/1.jpg" alt="Фото 1" class="gallery-photo">
+            <img src="../../attractions/Олимп/2.jpg" alt="Фото 2" class="gallery-photo">
+            <img src="../../attractions/Олимп/3.jpg" alt="Фото 3" class="gallery-photo">
+            <img src="../../attractions/Олимп/4.jpg" alt="Фото 4" class="gallery-photo">
+            <img src="../../attractions/Олимп/5.jpg" alt="Фото 5" class="gallery-photo">
+        </div>
+    </div>
+    <main>
+        <div class="content-block">
+            <div class="content-header" onclick="toggleContent()">
+                <h2>Содержание</h2>
+                <span class="arrow">&#9660;</span>
+            </div>
+            <div class="content-buttons-container">
+                <div class="content-buttons">
+                    <div class="content-button" onclick="scrollToSection('section1')">Описание</div>
+                    <div class="content-button" onclick="scrollToSection('section2')">Адрес</div>
+                    <div class="content-button" onclick="scrollToSection('section3')">Рядом находится</div>
+                </div>
+            </div>
+        </div>
+        <section id="section1">
+            <h2>Описание</h2>
+            <p>Олимп место где можно поиграть в автоматы, бильярд, поесть в кафе.
+Описание:Культурно-развлекательный комплекс «Олимп» открыл свои двери 10 октября 2009 года.
+Наше здание конца XIX века имеет богатую историю. В 1896 году в нём было открыто 4-х классное учебное заведение. Один из учеников в период 1902-1903 годов был поэт К.В. Иванов. В 1953 году здесь начал работать учебный центр по механизации сельского хозяйства №4, а затем до 1998 года - профессионально-техническое училище № 13(№ 89).
+В наших праздничных помещениях удобно организовывать свадьбы и юбилеи, корпоративные мероприятия, презентации и другие торжественные события. В ресторане можно разместить до 70 гостей, а в банкетном зале - до 25 человек. На втором этаже расположено просторное и уютное кафе. Также доступны услуги боулинга и бильярда.
+Для детей у нас есть 14 захватывающих игровых автоматов и симуляторов, 7 из которых выдают билеты, которые можно обменять на игрушки в нашем магазине подарков. Мы предлагаем специальное детское меню и систему праздничных скидок на детские мероприятия, чтобы облегчить заказ детских праздников. Культурно-развлекательный комплекс «Олимп» является популярным местом для проведения детских дней рождений.</p>
+        </section>
+        <section id="section2">
+            <h2>Адрес:</h2>
+            <p>г.Белебей, ул. Иванова 7.</p>
+        </section>
+        <section id="section3">
+            <h2>Рядом находится:</h2>
+            <p>Парк Славы.</p>
+        </section>
+    </main>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+        <a class="next" onclick="changeImage(1)">&#10095;</a>
+    </div>
+</body>
+</html>
